@@ -38,9 +38,11 @@ window.axios.get('http://127.0.0.1:8000/api/posts').then(result => {
  */
 
 import AppComponent from './app/Appcomponent'
+import router from './routes';
 
 const app = new Vue({
     el: '#app',
     render: (h) => h(AppComponent),
+    router
 
 });
