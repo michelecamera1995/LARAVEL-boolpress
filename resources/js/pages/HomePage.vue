@@ -1,22 +1,22 @@
 <template>
 <div>
     <HeaderComponent />
+    <BlogComponent />
 </div>
 </template>
 
 <script>
 import HeaderComponent from '../components/HeaderComponent.vue'
+import BlogComponent from '../components/BlogComponent.vue'
 export default {
     components: {
-        HeaderComponent ,
+        HeaderComponent,
+        BlogComponent,
     },
-  data() {
-    return {
-    }
-  }
 }
 </script>
 
 <style scoped>
+
 
 </style>

@@ -1,7 +1,7 @@
 <template>
 <div>
 
-      <header>
+      <header class="container">
 
             <!-- Nav Bar -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
