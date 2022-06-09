@@ -4,7 +4,7 @@
             <h1>Post:</h1>
             <CardListComponent :posts='posts' />
         </div>
-        <li><router-link :to="{name:'home'}">Torna alla home</router-link></li>
+        <a><router-link :to="{name:'home'}">Torna alla home</router-link></a>
   </div>
 </template>
 
