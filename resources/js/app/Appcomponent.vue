@@ -1,7 +1,7 @@
 
 <template>
 <div>
-    app vue caricato
+    <router-view></router-view>
 </div>
 </template>
 
