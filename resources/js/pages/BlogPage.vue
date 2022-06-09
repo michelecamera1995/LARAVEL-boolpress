@@ -1,15 +1,17 @@
 <template>
   <div class="container">
         <div >
+            <h1>Post:</h1>
             <CardListComponent :posts='posts' />
         </div>
+        <li><router-link :to="{name:'home'}">Torna alla home</router-link></li>
   </div>
 </template>
 
 <script>
 import CardListComponent from '../components/CardListComponent.vue';
 export default {
-
+    name: 'BlogPage',
   data() {
       return {
         posts:[]
