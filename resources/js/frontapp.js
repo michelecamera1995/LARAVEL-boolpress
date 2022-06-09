@@ -37,10 +37,10 @@ window.axios.get('http://127.0.0.1:8000/api/posts').then(result => {
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-
-AppComponent = require('./app/App.component.vue').default
+import AppComponent from './app/Appcomponent'
 
 const app = new Vue({
     el: '#app',
-    render: (h) => h(AppComponent)
+    render: (h) => h(AppComponent),
+
 });

@@ -1,12 +1,13 @@
 
 <template>
 <div>
-    ciao come va?
+    app vue caricato
 </div>
 </template>
 
 <script>
 export default {
+  name:'Appcomponent',
   data() {
     return {
     }
