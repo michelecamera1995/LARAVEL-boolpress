@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container  mt-4">
         <div >
             <h1>Post:</h1>
             <CardListComponent :posts='posts' />
