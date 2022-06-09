@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-     <CardComponent/>
+      <div v-for="(post,index) in posts" :key="index">
+          <CardComponent :title='post.title' :content='post.content'/>
+      </div>  
   </div>
 </template>
 

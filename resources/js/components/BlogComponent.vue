@@ -1,9 +1,8 @@
 <template>
   <div class="container">
-        <div v-if="posts.length>0">
+        <div >
             <CardListComponent :posts='posts' />
         </div>
-        <div v-else>Caricamento in corso...</div>
   </div>
 </template>
 
@@ -23,11 +22,12 @@ export default {
         window.axios.get('http://127.0.0.1:8000/api/posts')
             .then(results => {
                 console.log(results);
-                if (results.status === 200 && results.data.success) {
-                    this.posts = results.data.results
+                if (results.status === 200) {
+                    this.posts = results.data;
                 }
-            
-        })
+            }).catch(e => {
+                console.log(e);
+            })
     }
 }
 </script>
