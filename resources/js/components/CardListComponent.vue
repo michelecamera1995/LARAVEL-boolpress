@@ -1,7 +1,7 @@
 <template>
   <div class="container">
       <div class="card-container">
-          <CardComponent  v-for="(post,index) in posts" :key="index" :title='post.title' :content='post.content'/>
+          <CardComponent  v-for="(post,index) in posts" :key="index" :title='post.title' :id="post.id" :content='post.content'/>
       </div> 
   </div>
 </template>

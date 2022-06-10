@@ -4,13 +4,15 @@
       <h2>{{title}}</h2>
       <h4>Contenuto:</h4>
       <h4>{{content}}</h4>
+      <h4>{{id}}</h4>
+      <router-link :to="{name:'PostDetails', params: { id } }">Dettagli</router-link>
     </div>
 </template>
 
 <script>
 export default {
     name: 'CardComponent',
-    props:['title','content']
+    props:['title','content','id']
 }
 </script>
 
