@@ -7,6 +7,7 @@ Vue.use(VueRouter);
 import HomePage from './pages/HomePage';
 import BlogPage from './pages/BlogPage';
 import ContactsPage from './pages/ContactsPage';
+import PostDetails from './pages/PostDetails';
 
 const router = new VueRouter({
     mode: 'history',
@@ -25,6 +26,11 @@ const router = new VueRouter({
             path: '/contacts',
             name: 'contacts',
             component: ContactsPage
+        },
+        {
+            path: '/blog/:id',
+            name: 'PostDetails',
+            component: PostDetails
         }
     ]
 
