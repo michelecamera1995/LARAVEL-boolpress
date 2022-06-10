@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-      <div v-for="(post,index) in posts" :key="index">
-          <CardComponent :title='post.title' :content='post.content'/>
-      </div>  
+      <div class="card-container">
+          <CardComponent  v-for="(post,index) in posts" :key="index" :title='post.title' :content='post.content'/>
+      </div> 
   </div>
 </template>
 
@@ -17,6 +17,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.card-container{
+  display:flex;
+  width: (100%/4);
+  margin: 1%;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
 </style>
